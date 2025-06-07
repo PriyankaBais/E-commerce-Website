@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .login-container h2 {
+            color: #333;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 1rem;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-btn {
+            display: block;
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 1rem;
+            font-size: 1.1rem;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .signup-link {
+            display: block;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">SnapNShop</h1>
+
+        <br>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" onclick="toggleDropdown()">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="Electronics.html">Electronics</a>
+                        <a href="Fashion.html">Fashion</a>
+                        <a href="Home_Kitchen.html">Home & Kitchen</a>
+                        <a href="Sports.html">Sports</a>
+                        <a href="Books.html">Books</a>
+                        <a href="Beauty_Products.html">Beauty Products</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="story.html">Stories</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav><br>
+        <h1>Login to Your Account</h1>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2>Login</h2>
+
+            <form action="/authenticate" method="POST">
+                <!-- Username Input -->
+                <div class="input-group">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" name="username" required
+                        placeholder="Enter your username or email">
+                </div>
+
+                <!-- Password Input -->
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="login-btn" onclick="redirectToHome()">Login</button>
+
+                <script>
+                    function redirectToHome() {
+                        window.location.href = 'main.html'; // Replace with the actual path of your home page
+                    }
+                </script>
+                <!-- 
+                    <button type="submit" class="login-btn">Login</button> -->
+            </form>
+
+            </form>
+
+            <!-- Sign-up Link -->
+            <p class="signup-link">Don't have an account? <a href="Signup.html">Sign up here</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Website. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

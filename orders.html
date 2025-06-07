@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        .page-title {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 35px;
+            color: cadetblue;
+
+        }
+        .order-container {
+            width: 90%;
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f8f8f8;
+        }
+
+        .status {
+            font-weight: bold;
+        }
+
+        .status.pending {
+            color: orange;
+        }
+
+        .status.shipped {
+            color: blue;
+        }
+
+        .status.delivered {
+            color: green;
+        }
+
+        .details-btn {
+            padding: 8px 12px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .details-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1 class="logo">SnapNShop</h1>
+        <br>
+        <nav class="navbar">
+            <ul>
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" onclick="toggleDropdown()">Categories</a>
+                        <div class="dropdown-content">
+                            <a href="Electronics.html">Electronics</a>
+                            <a href="Fashion.html">Fashion</a>
+                            <a href="Home_Kitchen.html">Home & Kitchen</a>
+                            <a href="Sports.html">Sports</a>
+                            <a href="Books.html">Books</a>
+                            <a href="Beauty_Products.html">Beauty Products</a>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="trending.html">Trending</a></li>
+                    <li><a href="recommendations.html">Recommendations</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="story.html">Stories</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+        </nav><br>
+    </header>
+    <h2 class="page-title">My Orders!</h2>
+
+    <!-- Orders Section -->
+    <div class="order-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#12345</td>
+                    <td>Smartphone</td>
+                    <td>1</td>
+                    <td>Rs.699</td>
+                    <td class="status pending">Pending</td>
+                    <td><button class="details-btn">View Details</button></td>
+                </tr>
+                <tr>
+                    <td>#12346</td>
+                    <td>Wireless Headphones</td>
+                    <td>2</td>
+                    <td>Rs.199</td>
+                    <td class="status shipped">Shipped</td>
+                    <td><button class="details-btn">View Details</button></td>
+                </tr>
+                <tr>
+                    <td>#12347</td>
+                    <td>Gaming Laptop</td>
+                    <td>1</td>
+                    <td>Rs.1,299</td>
+                    <td class="status delivered">Delivered</td>
+                    <td><button class="details-btn">View Details</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>&copy; 2025 Your Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

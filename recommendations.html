@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations - SnapNShop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        .recommendations-container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .recommendations-container h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .recommendation-card {
+            display: inline-block;
+            width: 20%;
+            height: 15%;
+
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .recommendation-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
+        }
+
+        .recommendation-card img {
+            width: 100%;
+            height: 200px;
+
+            border-radius: 8px;
+        }
+
+        .recommendation-card h3 {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        .recommendation-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="logo">SnapNShop</h1><br>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" onclick="toggleDropdown()">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="Electronics.html">Electronics</a>
+                        <a href="Fashion.html">Fashion</a>
+                        <a href="Home_Kitchen.html">Home & Kitchen</a>
+                        <a href="Sports.html">Sports</a>
+                        <a href="Books.html">Books</a>
+                        <a href="Beauty_Products.html">Beauty Products</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="story.html">Stories</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <br>
+            <h1 style="color: white; size:0cqmax;">Our Recommendations</h1>
+        </nav>
+    </header>
+    <br>
+    <div class="recommendations-container">
+
+        <div class="recommendation-card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.IVVFv0twSQTUZCtBvwGYWwHaHa&pid=Api&P=0&h=180"
+                alt="Recommendation 1">
+            <h3>Bottles</h3>
+            <p>This is a description of Bottles. Highly recommended for its quality and value for money.</p>
+        </div>
+
+        <div class="recommendation-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPh_JV6J_r-F6XnIhty0qOpaDh0oTZZgpX2w&s"
+                alt="Recommendation 2">
+            <h3>Refrigerator</h3>
+            <p>Refrigerator is a top choice for those looking for durability and long-lasting performance.</p>
+        </div>
+
+        <div class="recommendation-card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP._efNH1rK-rcc5XNeK1pAfAHaHa&pid=Api&P=0&h=180"
+                alt="Recommendation 3">
+            <h3>Hand-Watch</h3>
+            <p>Get the best deals with Hand-Watch. It's perfect for anyone seeking efficiency and ease of use.</p>
+        </div>
+
+        <div class="recommendation-card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.puzai_D4808Fi7vlZTj3dQHaFh&pid=Api&P=0&h=180"
+                alt="Recommendation 4">
+            <h3>Laptop</h3>
+            <p>Get the best deals with Laptop. It's perfect for anyone seeking efficiency and ease of use.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SnapNShop | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Now</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff6a88);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            transform: scale(1.1);
+        }
+
+        /* Trending Grid */
+        .trending-section {
+            padding: 40px 20px;
+            text-align: center;
+            background: #ffffff;
+        }
+
+        .trending-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .recommendation-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+
+        }
+
+        .recommendation-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .recommendation-card h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        .recommendation-card p {
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .recommendation-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Search Bar */
+        .search-bar {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .search-bar input {
+            width: 50%;
+            padding: 12px;
+            border: 2px solid #ff758c;
+            border-radius: 25px;
+            font-size: 1em;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .search-bar input:focus {
+            border-color: #ff6a88;
+            box-shadow: 0 0 10px rgba(255, 106, 136, 0.5);
+        }
+
+        .search-bar button {
+            padding: 12px 25px;
+            font-size: 1em;
+            border: none;
+            background-color: #ff6a88;
+            color: white;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #ff4e6a;
+        }
+
+        /* Product Showcase */
+        .product-section {
+            padding: 30px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .product-slider {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        .product-slider::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .product-slider::-webkit-scrollbar-thumb {
+            background-color: #ff758c;
+            border-radius: 10px;
+        }
+
+        .product-card {
+            width: 220px;
+            height: 250px;
+            display: inline-block;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.1);
+        }
+
+        .product-card img {
+            width: 100px;
+            height: auto;
+        }
+
+        .product-card h3 {
+            font-size: 1.1em;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 0.9em;
+            color: #ff6a88;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff6a88);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">SnapNShop</div>
+        <br>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" onclick="toggleDropdown()">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="Electronics.html">Electronics</a>
+                        <a href="Fashion.html">Fashion</a>
+                        <a href="Home_Kitchen.html">Home & Kitchen</a>
+                        <a href="Sports.html">Sports</a>
+                        <a href="Books.html">Books</a>
+                        <a href="Beauty_Products.html">Beauty Products</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="story.html">Stories</a></li>
+
+            </ul>
+        </nav><br>
+        <h1 style="color: white;">Trending Now<h1>
+
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search trending items...">
+        <button>Search</button>
+    </div>
+
+    <!-- Trending Section -->
+    <section class="trending-section">
+        <h1>Trending Items</h1>
+        <div class="trending-grid">
+            <div class="recommendation-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.AW7ESjP2aHURzyImSkWMcgHaHa&pid=Api&P=0&h=180"
+                    alt="Trending 1">
+                <h3>Garnier Skin Naturals Bright Complete Vitamin C Face Wash - Vitamin C Face Wash For Brighter and
+                    Glowing Skin - Daily
+                    Cleanser Suitable For all Skin Types, 150g</h3>
+                <p>Rs.309</p>
+            </div>
+            <div class="recommendation-card">
+                <img src="https://m.media-amazon.com/images/I/71X-L+UT-IL._AC_UL480_FMwebp_QL65_.jpg" alt="Trending 2">
+                <h3>Philips Hair Straightener Brush - 5X Better Frizz Free Hair In 5min I Style with 2X More Volume |
+                    Shiny and Smooth Hair
+                    I No Scalp Burns | ThermoProtect Technology I Keratin Bristles I 2 Temperature settings | BHH880/10
+                </h3>
+                <p>Rs.3089</p>
+            </div>
+            <div class="recommendation-card">
+                <img src="https://sp.yimg.com/ib/th?id=OIP.fnUIpSvyIKlof48jPF9mrwHaE7&pid=Api&w=148&h=148&c=7&dpr=2&rs=1"
+                    alt="Trending 3">
+                <h3>SWISSTYLE Black Chain Chrono Look Analog Watch for Men</h3>
+                <p>Rs.780</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Trending Page. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

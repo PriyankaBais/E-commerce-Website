@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <style>
+        /* Container for the FAQ and contact form sections */
+        .support-section {
+            margin: 40px 10%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .contact-form {
+            margin: 40px 10%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        /* Style for the FAQ sections */
+        .faq {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq h3 {
+            color: #ff758c;
+            margin-bottom: 10px;
+        }
+
+        .faq p {
+            color: #333;
+        }
+
+        /* Style for the form */
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #ff758c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #ff3b62;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 768px) {
+
+            .support-section,
+            .contact-form {
+                margin: 20px 5%;
+            }
+        }
+    </style>
+    <header>
+        <h1 class="logo">SnapNShop</h1>
+        <br>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" onclick="toggleDropdown()">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="Electronics.html">Electronics</a>
+                        <a href="Fashion.html">Fashion</a>
+                        <a href="Home_Kitchen.html">Home & Kitchen</a>
+                        <a href="Sports.html">Sports</a>
+                        <a href="Books.html">Books</a>
+                        <a href="Beauty_Products.html">Beauty Products</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="story.html">Stories</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <br>
+        <h1 style="color: white;">Support</h1>
+    </header>
+
+    <section class="support-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+            <h3>How do I track my order?</h3>
+            <p>To track your order, go to the 'My Orders' section under your account, and you will see real-time updates
+                about your order status.</p>
+        </div>
+        <div class="faq">
+            <h3>What should I do if my order is damaged?</h3>
+            <p>If your order is damaged, please contact our customer support team immediately through the contact form
+                below, and we will help resolve the issue.</p>
+        </div>
+        <div class="faq">
+            <h3>How can I return an item?</h3>
+            <p>To return an item, visit the 'Returns & Exchanges' section in your account, or reach out to our support
+                team for further assistance.</p>
+        </div>
+
+        <div class="faq">
+            <h3>How do I track my order?</h3>
+            <p>To track your order, go to the 'My Orders' section under your account, and you will see real-time updates
+                about
+                your order status.</p>
+        </div>
+
+        <div class="faq">
+            <h3>What should I do if my order is damaged?</h3>
+            <p>If your order is damaged, please contact our customer support team immediately through the contact form
+                below,
+                and we will help resolve the issue.</p>
+        </div>
+
+        <div class="faq">
+            <h3>How can I return an item?</h3>
+            <p>To return an item, visit the 'Returns & Exchanges' section in your account, or reach out to our support
+                team for
+                further assistance.</p>
+        </div>
+
+        <div class="faq">
+            <h3>What payment methods do you accept?</h3>
+            <p>We accept a wide range of payment methods including credit/debit cards, PayPal, and bank transfers.
+                Please choose
+                your preferred method during checkout.</p>
+        </div>
+
+        <div class="faq">
+            <h3>Do you offer international shipping?</h3>
+            <p>Yes, we offer international shipping to most countries. Shipping fees and delivery times vary based on
+                your
+                location.</p>
+        </div>
+
+        <div class="faq">
+            <h3>How can I cancel my order?</h3>
+            <p>If you wish to cancel your order, please contact our support team as soon as possible. Cancellations are
+                only
+                accepted before the order is dispatched.</p>
+        </div>
+
+        <div class="faq">
+            <h3>Can I modify my order after placing it?</h3>
+            <p>Once your order is confirmed, we are unable to modify it. However, you can cancel the order and place a
+                new one
+                with the updated details.</p>
+        </div>
+
+        <div class="faq">
+            <h3>Do you offer gift cards?</h3>
+            <p>Yes, we offer gift cards in various denominations. You can purchase them on our website and use them
+                during
+                checkout.</p>
+        </div>
+
+        <div class="faq">
+            <h3>How do I contact customer support?</h3>
+            <p>You can reach out to customer support through the 'Contact Us' page or by sending us an email at
+                support@example.com.</p>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2025 SnapNShop. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

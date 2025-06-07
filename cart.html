@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        .cart-title {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .cart-items {
+            margin-bottom: 2rem;
+        }
+
+        .cart-item {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .item-details {
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .item-price {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .checkout-btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin-top: 2rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="logo">SnapNShop</h1>
+        <br>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" onclick="toggleDropdown()">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="Electronics.html">Electronics</a>
+                        <a href="Fashion.html">Fashion</a>
+                        <a href="Home_Kitchen.html">Home & Kitchen</a>
+                        <a href="Sports.html">Sports</a>
+                        <a href="Books.html">Books</a>
+                        <a href="Beauty_Products.html">Beauty Products</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="story.html">Stories</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+
+        <br>
+        <h1>Your Shopping Cart</h1>
+    </header>
+
+    <main>
+        <h2 class="cart-title">Items in Your Cart</h2>
+
+        <div class="cart-items">
+            <!-- Cart Item 1 -->
+            <div class="cart-item">
+                <div class="item-details">
+                    <h3> Hand-Watch</h3>
+                    <p>Vacheron Constantin</p>
+                </div>
+                <div class="item-price">Rs.890</div>
+            </div>
+
+            <!-- Cart Item 2 -->
+            <div class="cart-item">
+                <div class="item-details">
+                    <h3>Telivision</h3>
+                    <p>Xiaomi
+                    </p>
+                </div>
+                <div class="item-price">Rs.40,000</div>
+            </div>
+
+
+            <div class="cart-item">
+                <div class="item-details">
+                    <h3>Phone Cover</h3>
+                    <p>Realme</p>
+                </div>
+                <div class="item-price">Rs.550</div>
+            </div>
+
+            <!-- Cart Item 3 -->
+            <div class="cart-item">
+                <div class="item-details">
+                    <h3>Sweaters</h3>
+                    <p>Winter Sweaters</p>
+                </div>
+                <div class="item-price">Rs.560</div>
+            </div>
+        </div>
+
+        <a href="main.html" class="checkout-btn">Proceed to Checkout</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Your Website. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

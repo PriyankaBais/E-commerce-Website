@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Fashion</title>
+    <style>
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-card {
+
+            width: 250px;
+            /* Fixed width */
+            height: 370px;
+
+
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo">SnapNShop</h1>
+        <br>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" onclick="toggleDropdown()">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="Electronics.html">Electronics</a>
+                        <a href="Fashion.html">Fashion</a>
+                        <a href="Home_Kitchen.html">Home & Kitchen</a>
+                        <a href="Sports.html">Sports</a>
+                        <a href="Books.html">Books</a>
+                        <a href="Beauty_Products.html">Beauty Products</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="story.html">Stories</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav><br>
+        <h1 style="color: white;">Welcome to the Fashion Section</h1>
+
+    </header>
+
+    <section><br><br>
+        <h2 style="color: cadetblue; text-align: center;">Explore our Fashion Products!</h2><br>
+        <div class="product-gallery">
+            <!-- Product 1: T-Shirt -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI6CpNu6IVeynQ-mtDoFUJcbtXhuivqaT3Mg&s">
+                <h3>Fashionable T-Shirt</h3>
+                <h3>Rs.1300</h3>
+            </div>
+
+            <!-- Product 2: Jeans -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu8l9CAzLJ8LntMt71tdwNB1h7ZZGV-x2qmA&s">
+                <h3>Blue Denim Jeans</h3>
+                <h3>Rs.4500</h3>
+            </div>
+
+            <!-- Product 3: Jacket -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcFU3t0I1v-klxUTC-AZlXUkwBiMdzduvySQ&s">
+                <h3>Winter Jacket</h3>
+                <h3>Rs.5600</h3>
+            </div>
+
+            <!-- Product 4: Sneakers -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9gW3co24uBDJw4YtdDyrHAoxpMMW3l2Jcvg&s">
+                <h3>Stylish Sneakers</h3>
+                <h3>Rs.7600</h3>
+            </div>
+
+            <!-- Product 5: Sunglasses -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxeBgyrE-8yEpsHnsWBXtVYwkzZ5dywlr1tw&s">
+                <h3>Designer Sunglasses</h3>
+                <h3>Rs.860</h3>
+            </div>
+
+            <!-- Product 6: Handbag -->
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbW0wcY2ckm4k45JNXiE4NLihjnIelweAItA&s">
+                <h3>Leather Handbag</h3>
+                <h3>Rs.7880</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fashion Store. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

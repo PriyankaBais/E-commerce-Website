@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offers</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <style>
+        .offers-container {
+            display: flex;
+            justify-content: center;
+            /* Centers the offers horizontally */
+            align-items: flex-start;
+            /* Aligns the offers at the top */
+            gap: 20px;
+            /* Adds space between the offers */
+            flex-wrap: wrap;
+            /* Allows the items to wrap on smaller screens */
+            padding: 20px;
+            /* Adds padding around the offers */
+
+        }
+
+        .offer img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        .offer {
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            /* Ensures the offers don't stretch too wide */
+            text-align: center;
+            flex: 1 1 calc(33.33% - 20px);
+            /* Makes each offer take up 1/3rd of the container */
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        .offer:hover {
+            transform: scale(1.05);
+            /* Slightly enlarge the entire offer box */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            /* Add a shadow to the box */
+            background-color: #f9f9f9;
+            /* Change background color on hover */
+        }
+
+
+        .offer h2 {
+            color: #ff758c;
+        }
+    </style>
+    <header>
+        <h1 class="logo">SnapNShop</h1>
+        <br>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" onclick="toggleDropdown()">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="Electronics.html">Electronics</a>
+                        <a href="Fashion.html">Fashion</a>
+                        <a href="Home_Kitchen.html">Home & Kitchen</a>
+                        <a href="Sports.html">Sports</a>
+                        <a href="Books.html">Books</a>
+                        <a href="Beauty_Products.html">Beauty Products</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="story.html">Stories</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <br>
+        <h1 style="color: white;">Special Offers</h1>
+    </header>
+    <div id="offers" class="offers-container">
+        <div class="offer">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.FP64OWAEEHEmSHzUvfOn9AHaIJ&pid=Api&P=0&h=180"
+                alt="50% Off Offer Image">
+            <h2>50% Off on All Items</h2>
+            <p>Limited-time offer! Get 50% off on all products. Hurry, offer valid until the end of the month!</p>
+        </div>
+        <div class="offer">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.IVVFv0twSQTUZCtBvwGYWwHaHa&pid=Api&P=0&h=180"
+                alt="Buy 1 Get 1 Free Offer Image">
+            <h2>Buy 1 Get 1 Free</h2>
+            <p>Purchase any item and get another absolutely free. Don't miss out!</p>
+        </div>
+        <div class="offer">
+            <img src="https://up.yimg.com/ib/th?id=OIP.9LC4J5pNAEvRApt5RSmlNQHaFj&pid=Api&rs=1&c=1&qlt=95&w=161&h=120"
+                alt="Free Shipping Offer Image">
+            <h2>Free Shipping on Orders Over $50</h2>
+            <p>Enjoy free shipping when you shop for $50 or more. Shop now!</p>
+        </div>
+    </div>
+    <footer>© 2025 Trending Now. All rights reserved.</footer>
+</body>
+
+</html>

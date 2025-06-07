@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help & Support - SnapNShop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff6a88);
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .navbar ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            transform: scale(1.1);
+        }
+
+        /* Main Content Styling */
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff7eb3;
+        }
+
+        p {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Section Styling */
+        .section {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #ff6a88;
+        }
+
+        h3 {
+            color: #444;
+        }
+
+        .contact-info {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        .contact-info,
+        a {
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(45deg, #ff7eb3, #ff758c, #ff6a88);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">SnapNShop</div>
+        <br>
+        <nav class="navbar">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" onclick="toggleDropdown()">Categories</a>
+                    <div class="dropdown-content">
+                        <a href="Electronics.html">Electronics</a>
+                        <a href="Fashion.html">Fashion</a>
+                        <a href="Home_Kitchen.html">Home & Kitchen</a>
+                        <a href="Sports.html">Sports</a>
+                        <a href="Books.html">Books</a>
+                        <a href="Beauty_Products.html">Beauty Products</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="recommendations.html">Recommendations</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="story.html">Stories</a></li>
+                <li><a href="help.html">Help</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Help & Support</h1>
+        <p>Find answers to common questions or contact our support team.</p>
+
+        <!-- Contact Support Section -->
+        <div class="section">
+            <h2>Contact Support</h2>
+            <p>If you need further assistance, you can reach us at:</p>
+            <p class="contact-info">📧 Email: support@snapnshop.com</p>
+            <p class="contact-info">📞 Phone: +1-800-123-4567</p>
+            <p>Our support team is available 24/7 to help you with your queries.</p>
+        </div>
+
+        <!-- Frequently Asked Questions (FAQs) -->
+        <div class="section">
+            <h2>Frequently Asked Questions</h2>
+            <h3> 1. How do I track my order?</h3>
+            <p style="text-align: left;"><b>Ans.</b> Go to the "My Orders" section in your account and check the current
+                status
+                of your order.</p>
+            <br>
+
+            <h3>2. What is the return policy?</h3>
+
+
+            <p style="text-align: left;"><b>Ans.</b>You can return items within 7 days of delivery. Make sure to check
+                the product
+                return eligibility.</p>
+            <br>
+            <h3>3. How can I change my delivery address?</h3>
+
+
+            <p style="text-align: left;"><b>Ans.</b>You can update your address in "My Orders" before the order is
+                shipped.</p>
+            <br>
+            <h3>4. Do you offer international shipping?</h3>
+
+
+            <p style="text-align: left;"><b>Ans.</b>Yes, we ship worldwide. Shipping charges may vary based on location.
+            </p>
+            <br>
+            <h3>5. What payment methods do you accept?</h3>
+
+
+            <p style="text-align: left;"><b>Ans.</b>We accept credit/debit cards, UPI, PayPal, and net banking.</p>
+            <br>
+        </div>
+
+        <!-- Order Tracking Section -->
+        <div class="section">
+            <h2>Order Tracking</h2><br>
+            <p>To track your order, visit the <a href="/orders.html">My Orders</a> page and enter your order ID.</p>
+            <p>If you face issues, contact support with your order details.</p>
+        </div>
+
+        <!-- Policies Section -->
+        <div class="section">
+            <h2>Our Policies</h2>
+            <br>
+            <ul>
+                <li><strong>Privacy Policy:</strong> We ensure your data remains safe and protected.</li>
+                <li><strong>Refund Policy:</strong> Refunds are processed within 5-7 business days for eligible returns.
+                </li>
+                <li><strong>Terms of Service:</strong> By using SnapNShop, you agree to our terms and conditions.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2025 SnapNShop | All Rights Reserved</p>
+    </footer>
+
+</body>
+
+</html>
